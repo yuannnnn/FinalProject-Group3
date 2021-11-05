@@ -8,4 +8,4 @@
 * The Yuan-Meng-Individual-Project folder contains Yuan's individual report and codes.
 
 ## Project Summary
-The project is to work on the [GLUE competition](https://gluebenchmark.com/tasks) for the [Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/index.html) task, which predicts a given sentence's sentiment (positive/negative) from movie reviews based on human annotations. 
+The project is to work on the [GLUE competition](https://gluebenchmark.com/tasks), which contains Single-Sentence Tasks, Similarity and Paraphrase Tasks, and Inference Tasks. These task are using following datasets: The Corpus of Linguistic Acceptability (CoLA), The Stanford Sentiment Treebank(SST-2), Microsoft Research Paraphrase Corpus for Similarity and Paraphrase Task (MRPC), Semantic Textual Similarity Benchmark (STS-B), Quora Question Pairs (QQB), MultiNLI Matched (MNLI), MultiNLI Mismatched, Question NLI (QNLI), Recognizing Textual Entailment (RTE)  and Winograd NLI, Diagnostics Main (WNLI).
