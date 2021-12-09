@@ -17,7 +17,7 @@ GLUE_TASKS = ["cola", "mnli", "mnli-mm", "mrpc", "qnli", "qqp", "rte", "sst2", "
 
 num_epochs = 5
 # Name of task
-task = "cola"
+task = "stsb"
 checkpoint = "roberta-base"
 
 actual_task = "mnli" if task == "mnli-mm" else task
@@ -131,11 +131,15 @@ print(device)
 progress_bar = tqdm(range(num_training_steps))
 
 model.train()
+
 for epoch in range(num_epochs):
     for batch in train_dataloader:
         batch = {k: v.to(device) for k, v in batch.items()}
         outputs = model(**batch)
-        loss = loss_fct(outputs, batch['labels'])
+        if task=="stsb":
+            loss = loss_fct(outputs, batch['labels'].unsqueeze(1))
+        else:
+            loss= loss_fct(outputs, batch['labels'])
         loss.backward()
 
         optimizer.step()
