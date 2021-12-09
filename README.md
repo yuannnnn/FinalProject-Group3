@@ -6,7 +6,7 @@
 * The Final-Group-Presentation folder contains the presentation slides.
 * The Code folder contains all codes of the project.
 * The Yuan-Meng-Individual-Project folder contains Yuan's individual report and codes.
-* The firstname-lastname-Individual-Project folder contains 's individual report and codes.
+* The Abdulaziz-Gebril-Individual-Project folder contains 's individual report and codes.
 * The firstname-lastname-Individual-Project folder contains 's individual report and codes.
 
 ## Project Summary
